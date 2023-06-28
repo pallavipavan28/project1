@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color:white;
+}
+
+.topnav a {
+    border: 2px solid #c51e1e;
+   border-radius: 10px;
+  float: left;
+  display: block;
+  color: #c51e1e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #c51e1e;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #c51e1e;
+  color: white;
+}
+
+.topnav .icon {
+  display:none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    float: right;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width:18px;
+    margin-top: 25px;
+  }
+  .topnav.responsive a {
+    
+    display: block;
+    text-align: left;
+    width: 200px;
+    margin-left: 42%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <img src="C:\Users\DELL\Desktop\project1\images/logo.jpg" height="100px" alt="display"style=float:left;> 
+   <div style="float:right;padding:20px;">
+    <a class="" href="#"><i class="fa fa-search"></i>&nbsp;Search</a>
+    <a href="#news"><i class="fa fa-tags"></i>&nbsp;Offers</a>
+    <a href="#contact"><i class="fa fa-shopping-cart"></i>&nbsp;Cart</a>
+    <a href="#about"><i class="fa fa-user-circle-o"></i>&nbsp;Sign Up</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+</div>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
